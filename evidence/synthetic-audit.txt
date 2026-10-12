@@ -1,0 +1,13 @@
+AuditBond synthetic public fixture v1
+This is invented demonstration data. It describes no real company or customer.
+
+Access control test: on 2026-10-12, an unprivileged synthetic user attempted to
+read a restricted synthetic audit record. The service denied the request with
+HTTP 403 and returned no record contents. An authorized synthetic reviewer
+could read that same test record with HTTP 200.
+
+Deletion test: the synthetic test account was deleted. A later lookup returned
+HTTP 404. The access token for that account was rejected with HTTP 401.
+
+These observations demonstrate the two toy checklist requirements only.
+They are not an external audit, certification, or proof of real compliance.

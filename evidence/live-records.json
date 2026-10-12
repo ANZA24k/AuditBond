@@ -1,0 +1,391 @@
+{
+  "network": "stable Studionet",
+  "chain_id": 61999,
+  "deployed_commit": "c9b8cc328abd14760824639d29cb13dd9a14fa0b",
+  "contract": "0xA5435aDC4f8038Ad3D027a026fc775222Ca0A5A1",
+  "source_bytes": 15602,
+  "source_sha256": "31fb5efbe8bb5d30340e9b2c5f56584142ae7b84b3dbc371d1d079c8fac9bc98",
+  "source_readback_matches": true,
+  "receipts": [
+    {
+      "hash": "0x3c61d316fa5e03440a706703cfe2da6a9917dc6cd1a398abb7f252767ebca6a1",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_only": false,
+      "execution_mode": "NORMAL",
+      "from": "0xFE858F4f7b3F0Fff7947F40f83F0CF3b626fF580",
+      "to": "0xA5435aDC4f8038Ad3D027a026fc775222Ca0A5A1",
+      "value": 1000000000000000000,
+      "votes": {
+        "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11": "agree",
+        "0x14402D49f317CE1a2F35BAE01b1804A2A9703dCb": "idle",
+        "0x36728d2a123aB444E603EE5b2ad17d18Bb193557": "agree",
+        "0x4404Fb70d490c935758146f42A73DC850FF95C71": "agree",
+        "0xacc2459F341D7a887bcA8FAA62F1EC9378d4Bc67": "idle"
+      },
+      "leaders": [
+        {
+          "execution_result": "SUCCESS",
+          "stderr": "",
+          "result": "AAA="
+        },
+        {
+          "execution_result": "SUCCESS",
+          "stderr": "",
+          "result": "AAA="
+        }
+      ],
+      "validators": [
+        {
+          "vote": "idle",
+          "execution_result": "ERROR",
+          "nondet_disagree": null
+        },
+        {
+          "vote": "idle",
+          "execution_result": "ERROR",
+          "nondet_disagree": null
+        },
+        {
+          "vote": "agree",
+          "execution_result": "SUCCESS",
+          "nondet_disagree": null
+        },
+        {
+          "vote": "agree",
+          "execution_result": "SUCCESS",
+          "nondet_disagree": null
+        }
+      ]
+    },
+    {
+      "hash": "0x59560bd42abee42b5a1bdd310c7c43f83ba53b10b999678f50d5d0394538c4d0",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_only": false,
+      "execution_mode": "NORMAL",
+      "from": "0x9e3CCf51f19057182D8cdbC16B6B87b4BfCEFF78",
+      "to": "0xA5435aDC4f8038Ad3D027a026fc775222Ca0A5A1",
+      "value": 0,
+      "votes": {
+        "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100": "agree",
+        "0x4aba638Cf0Cf5249437AaD968fC69dde46ae6BAC": "agree",
+        "0x772ffCd1dF6Cc566eC4b8d3f4F4f8eBbb6B36C84": "idle",
+        "0x90402341F0B0e97b23023c0a87de957FB7148E0F": "idle",
+        "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8": "agree"
+      },
+      "leaders": [
+        {
+          "execution_result": "SUCCESS",
+          "stderr": "",
+          "result": "AAA="
+        },
+        {
+          "execution_result": "SUCCESS",
+          "stderr": "",
+          "result": "AAA="
+        }
+      ],
+      "validators": [
+        {
+          "vote": "agree",
+          "execution_result": "SUCCESS",
+          "nondet_disagree": null
+        },
+        {
+          "vote": "agree",
+          "execution_result": "SUCCESS",
+          "nondet_disagree": null
+        },
+        {
+          "vote": "idle",
+          "execution_result": "ERROR",
+          "nondet_disagree": null
+        },
+        {
+          "vote": "idle",
+          "execution_result": "ERROR",
+          "nondet_disagree": null
+        }
+      ]
+    },
+    {
+      "hash": "0x1e10696dbcdcb8c099721e3ee112aaebeee57431833819957baea0fa8938d7e5",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_only": false,
+      "execution_mode": "NORMAL",
+      "from": "0xFE858F4f7b3F0Fff7947F40f83F0CF3b626fF580",
+      "to": "0xA5435aDC4f8038Ad3D027a026fc775222Ca0A5A1",
+      "value": 0,
+      "votes": {
+        "0x3E5ee2507cc167C9925Bf10c67D7986581112024": "agree",
+        "0x4aba638Cf0Cf5249437AaD968fC69dde46ae6BAC": "idle",
+        "0x5310dcF075E0BD47d29B8ec6581F736C767f54D2": "idle",
+        "0xDB1c35c1f05d885999b8f13e5735307BcC16Be88": "agree",
+        "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8": "agree"
+      },
+      "leaders": [
+        {
+          "execution_result": "SUCCESS",
+          "stderr": "",
+          "result": "AIQEYmRiN2RiNmYxYzEwYTdjNDNmMWE1NDc1ODI5NDJiNmM4ZGIxNmU1Y2U3MTRiOTQ4MTg3MTI2YThhZGMyMTdhNA=="
+        },
+        {
+          "execution_result": "SUCCESS",
+          "stderr": "",
+          "result": "AIQEYmRiN2RiNmYxYzEwYTdjNDNmMWE1NDc1ODI5NDJiNmM4ZGIxNmU1Y2U3MTRiOTQ4MTg3MTI2YThhZGMyMTdhNA=="
+        }
+      ],
+      "validators": [
+        {
+          "vote": "agree",
+          "execution_result": "SUCCESS",
+          "nondet_disagree": null
+        },
+        {
+          "vote": "idle",
+          "execution_result": "ERROR",
+          "nondet_disagree": null
+        },
+        {
+          "vote": "agree",
+          "execution_result": "SUCCESS",
+          "nondet_disagree": null
+        },
+        {
+          "vote": "idle",
+          "execution_result": "ERROR",
+          "nondet_disagree": null
+        }
+      ]
+    },
+    {
+      "hash": "0xd6139e94964a44dce6da90e04d495b97c147212cd9d77ebe3787e40760d3a112",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_only": false,
+      "execution_mode": "NORMAL",
+      "from": "0x9e3CCf51f19057182D8cdbC16B6B87b4BfCEFF78",
+      "to": "0xA5435aDC4f8038Ad3D027a026fc775222Ca0A5A1",
+      "value": 1000000000000000000,
+      "votes": {
+        "0x4EDbE1FC9EAeC7b0EBA849b0C76AE73Eb0ad5C47": "agree",
+        "0x4aba638Cf0Cf5249437AaD968fC69dde46ae6BAC": "agree",
+        "0x5310dcF075E0BD47d29B8ec6581F736C767f54D2": "agree",
+        "0x76c25AFC12c75485703cCFfd0083AA6201455B25": "agree",
+        "0xacc2459F341D7a887bcA8FAA62F1EC9378d4Bc67": "agree"
+      },
+      "leaders": [
+        {
+          "execution_result": "SUCCESS",
+          "stderr": "",
+          "result": "AAww"
+        },
+        {
+          "execution_result": "SUCCESS",
+          "stderr": "",
+          "result": "AAww"
+        }
+      ],
+      "validators": [
+        {
+          "vote": "agree",
+          "execution_result": "SUCCESS",
+          "nondet_disagree": null
+        },
+        {
+          "vote": "agree",
+          "execution_result": "SUCCESS",
+          "nondet_disagree": null
+        },
+        {
+          "vote": "agree",
+          "execution_result": "SUCCESS",
+          "nondet_disagree": null
+        },
+        {
+          "vote": "agree",
+          "execution_result": "SUCCESS",
+          "nondet_disagree": null
+        }
+      ]
+    },
+    {
+      "hash": "0x7b0511f6be36e1c5c9b3832d6bad157a16989edb85850ade22cb2646394ca886",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_only": false,
+      "execution_mode": "NORMAL",
+      "from": "0xFE858F4f7b3F0Fff7947F40f83F0CF3b626fF580",
+      "to": "0xA5435aDC4f8038Ad3D027a026fc775222Ca0A5A1",
+      "value": 0,
+      "votes": {
+        "0x3E5ee2507cc167C9925Bf10c67D7986581112024": "agree",
+        "0x772ffCd1dF6Cc566eC4b8d3f4F4f8eBbb6B36C84": "agree",
+        "0xE6BD8050758CB15fC88387223E31Ae2708B119dC": "agree",
+        "0xacc2459F341D7a887bcA8FAA62F1EC9378d4Bc67": "idle",
+        "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8": "idle"
+      },
+      "leaders": [
+        {
+          "execution_result": "SUCCESS",
+          "stderr": "",
+          "result": "AAA="
+        },
+        {
+          "execution_result": "SUCCESS",
+          "stderr": "",
+          "result": "AAA="
+        }
+      ],
+      "validators": [
+        {
+          "vote": "idle",
+          "execution_result": "ERROR",
+          "nondet_disagree": null
+        },
+        {
+          "vote": "agree",
+          "execution_result": "SUCCESS",
+          "nondet_disagree": null
+        },
+        {
+          "vote": "agree",
+          "execution_result": "SUCCESS",
+          "nondet_disagree": null
+        },
+        {
+          "vote": "idle",
+          "execution_result": "ERROR",
+          "nondet_disagree": null
+        }
+      ]
+    },
+    {
+      "hash": "0x8756d5a93acf269a90f3edd8f71b5d61b0c7a5a20f01d42a6e5beed1262cf800",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_only": false,
+      "execution_mode": "NORMAL",
+      "from": "0xFE858F4f7b3F0Fff7947F40f83F0CF3b626fF580",
+      "to": "0xA5435aDC4f8038Ad3D027a026fc775222Ca0A5A1",
+      "value": 0,
+      "votes": {
+        "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11": "agree",
+        "0x3E5ee2507cc167C9925Bf10c67D7986581112024": "idle",
+        "0x5310dcF075E0BD47d29B8ec6581F736C767f54D2": "agree",
+        "0x76c25AFC12c75485703cCFfd0083AA6201455B25": "agree",
+        "0xDB1c35c1f05d885999b8f13e5735307BcC16Be88": "idle"
+      },
+      "leaders": [
+        {
+          "execution_result": "SUCCESS",
+          "stderr": "",
+          "result": "AAA="
+        },
+        {
+          "execution_result": "SUCCESS",
+          "stderr": "",
+          "result": "AAA="
+        }
+      ],
+      "validators": [
+        {
+          "vote": "agree",
+          "execution_result": "SUCCESS",
+          "nondet_disagree": null
+        },
+        {
+          "vote": "idle",
+          "execution_result": "ERROR",
+          "nondet_disagree": null
+        },
+        {
+          "vote": "idle",
+          "execution_result": "ERROR",
+          "nondet_disagree": null
+        },
+        {
+          "vote": "agree",
+          "execution_result": "SUCCESS",
+          "nondet_disagree": null
+        }
+      ]
+    }
+  ],
+  "verdict": {
+    "audit_id": "0",
+    "contract": "0xA5435aDC4f8038Ad3D027a026fc775222Ca0A5A1",
+    "decision_hash": "bdb7db6f1c10a7c43f1a547582942b6c8db16e5ce714b948187126a8adc217a4",
+    "domain": "AuditBond/v1",
+    "evaluated_at": 1791804092,
+    "evidence_hash": "5833fdc966851f620a5b2a053b089c35f8235c389a3edeb821fcba3ec4dc64ca",
+    "findings": [
+      {
+        "criterion": 0,
+        "evidence": 0,
+        "quote": "an unprivileged synthetic user attempted to\nread a restricted synthetic audit record. The service denied the request with\nHTTP 403 and returned no record contents.",
+        "status": "PASS"
+      },
+      {
+        "criterion": 1,
+        "evidence": 0,
+        "quote": "the synthetic test account was deleted. A later lookup returned\nHTTP 404. The access token for that account was rejected with HTTP 401.",
+        "status": "PASS"
+      }
+    ],
+    "integrity": [
+      "VERIFIED"
+    ],
+    "policy_hash": "7a555b9cd711462ea199ff7681ab6bf75fc4b3c5fe641cb1b065c5bf6e9ff1d3",
+    "previous_hash": "",
+    "revision": 1,
+    "statuses": [
+      "PASS",
+      "PASS"
+    ],
+    "verdict": "COMPLIANT"
+  },
+  "final_audit": {
+    "bond": 1000000000000000000,
+    "evidence_hash": "5833fdc966851f620a5b2a053b089c35f8235c389a3edeb821fcba3ec4dc64ca",
+    "manifest": [
+      {
+        "bytes": 700,
+        "sha256": "b8190c5ceba55c04a843b2fde2b274127c5f3961496aa98f70d02035e3ecb6a4",
+        "url": "https://raw.githubusercontent.com/ANZA24k/AuditBond/c9b8cc328abd14760824639d29cb13dd9a14fa0b/evidence/synthetic-audit.txt"
+      }
+    ],
+    "policy": {
+      "criteria": [
+        "Unprivileged access to the test record is denied without exposing contents.",
+        "Deleted test account is unavailable and its access token is rejected."
+      ],
+      "evidence_requirements": "Public synthetic test observations with explicit HTTP outcomes for both checks.",
+      "title": "Synthetic access and deletion checks"
+    },
+    "policy_hash": "7a555b9cd711462ea199ff7681ab6bf75fc4b3c5fe641cb1b065c5bf6e9ff1d3",
+    "revision": 1,
+    "reward": 1000000000000000000,
+    "settle_deadline": 1791804318,
+    "settlement": {
+      "decision_hash": "bdb7db6f1c10a7c43f1a547582942b6c8db16e5ce714b948187126a8adc217a4",
+      "settled_at": 1791804335,
+      "sponsor_credit": 0,
+      "submitter_credit": 2000000000000000000,
+      "verdict": "COMPLIANT"
+    },
+    "sponsor": "0x9e3CCf51f19057182D8cdbC16B6B87b4BfCEFF78",
+    "state": "SETTLED",
+    "submit_deadline": 1791804198,
+    "submitter": "0xFE858F4f7b3F0Fff7947F40f83F0CF3b626fF580"
+  },
+  "final_accounting": {
+    "audits_created": 1,
+    "liability": 0
+  },
+  "submitter_credit_wei": 0,
+  "contract_balance_wei": 0,
+  "submitter_balance_wei": 11000000000000000000
+}

@@ -47,3 +47,7 @@ genvm-lint check contracts/auditbond.py
 The offline host double executes the actual source with deterministic injected web/LLM results, models transactional rollback and directly exercises validator rejection. It does not prove runtime behavior or real LLM agreement; the deployment and live test are documented separately in [DEPLOYMENT.md](DEPLOYMENT.md) and [evidence/LIVE_VERIFICATION.md](evidence/LIVE_VERIFICATION.md).
 
 The runner matches the stable Studio template (v0.2.16), not the v0.3 release candidate. Official docs were checked on 2026-10-12. [Security model](SECURITY.md).
+
+## Verified Studionet deployment
+
+[AuditBond on Explorer](https://explorer-studio.genlayer.com/address/0xA5435aDC4f8038Ad3D027a026fc775222Ca0A5A1) — exact source from commit `c9b8cc328abd14760824639d29cb13dd9a14fa0b`. Six finalized Full Consensus transactions demonstrate deployment, funding, independent submission, **COMPLIANT** assessment, deterministic settlement and simulated withdrawal. Final liability and contract balance are zero. [Copy-ready submission](SUBMISSION.md) · [Live verification](evidence/LIVE_VERIFICATION.md).

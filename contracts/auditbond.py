@@ -195,9 +195,9 @@ class AuditBond(gl.Contract):
             for item in manifest:
                 # Raw bytes, not rendered pages. No truncation before hash verification.
                 response = gl.nondet.web.get(item['url'])
-                require(response.status_code < 500 and response.status_code not in (408, 429), 'transient evidence failure; retry')
-                body = response.body
-                valid = (response.status_code == 200 and len(body) == item['bytes']
+                require(response.status < 500 and response.status not in (408, 429), 'transient evidence failure; retry')
+                body = response.body or b''
+                valid = (response.status == 200 and len(body) == item['bytes']
                          and len(body) <= MAX_BYTES and hashlib.sha256(body).hexdigest() == item['sha256'])
                 integrity.append('VERIFIED' if valid else 'UNAVAILABLE')
                 if not valid:

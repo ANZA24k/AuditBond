@@ -53,7 +53,7 @@ def env(monkeypatch):
     monkeypatch.setattr(m, 'now', lambda: clock[0])
     a = m.AuditBond()
     a.create_audit(json.dumps(POLICY), 10, 1100, 1200)
-    monkeypatch.setattr(host.nondet.web, 'get', lambda url: types.SimpleNamespace(status_code=200, body=BODY), raising=False)
+    monkeypatch.setattr(host.nondet.web, 'get', lambda url: types.SimpleNamespace(status=200, body=BODY), raising=False)
     calls = []
     statuses = ['PASS', 'PASS']
     quotes = ['The service denied the request with\nHTTP 403 and returned no record contents.', 'The access token for that account was rejected with HTTP 401.']
@@ -160,7 +160,7 @@ def test_manifest_policy_limits():
 @pytest.mark.parametrize('status,body',[(404,b''),(200,BODY+b'x'),(200,b'x'*len(BODY)),(302,BODY)])
 def test_integrity_failure_never_judges_partial_bundle(env,monkeypatch,status,body):
     a,_,_,calls=env; submit(a)
-    monkeypatch.setattr(host.nondet.web,'get',lambda url:types.SimpleNamespace(status_code=status,body=body))
+    monkeypatch.setattr(host.nondet.web,'get',lambda url:types.SimpleNamespace(status=status,body=body))
     a.evaluate('0')
     assert json.loads(a.get_verdict('0',1))['verdict']=='INSUFFICIENT' and calls==[]
 
@@ -168,7 +168,7 @@ def test_integrity_failure_never_judges_partial_bundle(env,monkeypatch,status,bo
 @pytest.mark.parametrize('status',[408,429,500,503])
 def test_transient_failure_does_not_create_verdict(env,monkeypatch,status):
     a,_,_,_=env; submit(a)
-    monkeypatch.setattr(host.nondet.web,'get',lambda url:types.SimpleNamespace(status_code=status,body=b''))
+    monkeypatch.setattr(host.nondet.web,'get',lambda url:types.SimpleNamespace(status=status,body=b''))
     with pytest.raises(UserError): tx(a,lambda:a.evaluate('0'))
     assert a.history=={} and json.loads(a.get_audit('0'))['revision']==0
 
